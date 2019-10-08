@@ -100,8 +100,8 @@ function drawLine (evt) {
         ctx.strokeStyle = system.currentColor
         ctx.lineWidth = system.brushSize;
         ctx.beginPath()
-        ctx.moveTo(x, y)
-        ctx.lineTo(x-dx, y-dy)
+        ctx.moveTo(x-dx, y-dy)
+        ctx.lineTo(x, y)
         ctx.stroke()
         ctx.closePath()
     }
